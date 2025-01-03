@@ -1,0 +1,147 @@
+@font-face {
+   font-family: "Figtree";
+   src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+}
+html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   font-family: "Figtree";
+   color: #111111;
+}
+body {
+   background-color: #f4d04e;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+}
+.article-card {
+   border: solid;
+   border-width: 1px;
+   border-radius: 20px;
+   box-shadow: 8px 8px #111111;
+   width: 384px;
+   height: 522px;
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+}
+.article-img-frame {
+   width: 336px;
+   height: 200px;
+   overflow: hidden;
+   border-radius: 10px;
+   margin-top: 24px;
+   margin-bottom: 24px;
+}
+.article-img {
+   width: 100%;
+   height: 100%;
+}
+.article-text-frame {
+   width: 336px;
+   height: 194px;
+}
+.article-status {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f4d04e;
+   height: 29px;
+   width: 82px;
+   font-weight: 900;
+   font-size: 14px;
+   border-radius: 4px;
+}
+.article-text-date {
+   font-size: 14px;
+   font-weight: 600;
+}
+h1 {
+   font-size: 26px;
+   font-weight: 900;
+   margin-top: 12px;
+   margin-bottom: 0px;
+   color: #111111;
+}
+a {
+   text-decoration: none;
+}
+a :hover {
+   color: #f4d04e;
+}
+p {
+   margin-top: 12px;
+   margin-bottom: 0px;
+}
+.article-longtext {
+   color: #6b6b6b;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 150%;
+}
+.article-footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 32px;
+   width: 129px;
+   margin-top: 32px;
+   margin-bottom: 12px;
+}
+.article-footer-img-frame {
+   height: 32px;
+   width: 32px;
+}
+.article-footer-img {
+   height: 100%;
+   width: 100%;
+}
+.article-footer-author strong {
+   font-size: 14px;
+   font-weight: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+   .article-card {
+      width: 327px;
+      height: 501px;
+   }
+   .article-img-frame {
+      width: 279px;
+      height: 200px;
+   }
+   .article-img {
+      height: 100%;
+      width: auto;
+   }
+   .article-text-frame {
+      width: 279px;
+      height: 173px;
+   }
+   .article-status {
+      height: 26px;
+      width: 73px;
+      font-weight: 900;
+      font-size: 12px;
+      border-radius: 4px;
+   }
+   h1 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-top: 12px;
+      margin-bottom: 0px;
+   }
+   .article-longtext {
+      color: #6b6b6b;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 150%;
+   }
+}

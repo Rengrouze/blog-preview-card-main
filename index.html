@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+      <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <title>Frontend Mentor | Blog preview card</title>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution {
+            font-size: 11px;
+            text-align: center;
+         }
+         .attribution a {
+            color: hsl(228, 45%, 44%);
+         }
+      </style>
+   </head>
+   <body>
+      <article class="article-card">
+         <div class="article-img-frame">
+            <img
+               class="article-img"
+               src="./assets/images/illustration-article.svg"
+               alt="an abstract drawing with white, yellow and black shapes"
+            />
+         </div>
+         <div class="article-text-frame">
+            <div class="article-status">Learning</div>
+            <p class="article-text-date">Published 21 Dec 2023</p>
+            <a href="#"><h1>HTML & CSS foundations</h1></a>
+            <p class="article-longtext">These languages are the backbone of every website, defining structure,content, and presentation.</p>
+            <div class="article-footer">
+               <div class="article-footer-img-frame">
+                  <img
+                     class="article-footer-img"
+                     src="./assets/images/image-avatar.webp"
+                     alt="a profile picture showing the photo of Greg Hooper, the creator of this article"
+                  />
+               </div>
+               <div>
+                  <p class="article-footer-author"><strong>Greg Hooper</strong></p>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
 </html>
